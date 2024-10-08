@@ -1,0 +1,139 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradiente suave */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 212, 0.8); /* Fundo semitransparente */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para o cabeçalho */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Texto branco */
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave na mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #ff7f7f; /* Cor do hover */
+}
+
+/* Main content */
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* Conteúdo */
+#conteudo {
+    background: rgba(255, 67, 67, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Removendo efeito de zoom na pergunta */
+#pergunta {
+    margin: 20px 0;
+}
+
+/* Container dos botões */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Botões */
+.btn {
+    background: #ff00d4; /* Cor vibrante */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px; /* Largura maior */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para os botões */
+}
+
+.btn:hover {
+    background-color: #ff3d88; /* Cor do hover */
+}
+
+/* Posicionamento do botão NÃO ao mover */
+#btn-nao {
+    position: relative;
+}
+
+/* Limitar o tamanho das imagens do carrossel */
+.carousel-inner img {
+    padding-top: 50px;
+    max-width: 700px;
+    max-height: 650px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* Estilo dos cartões */
+.card {
+    max-width: 300px;
+    margin: auto;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Cantos arredondados */
+}
+
+/* Container do vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-video {
+    width: 50%;
+    height: auto;
+}
